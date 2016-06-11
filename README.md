@@ -29,7 +29,7 @@
 * *NonVarAA*: number of sites in amino acid alignment were no variation was seen (marked "\*" in ClustalW format)  
 
 
-## Parameters added in the Calculations table:
+## Parameters added in the visualisation step:
 * *AllelicDiv*: number of unique nucleotide sequences found divided by average length (greater if more diverse)  
 * *ADivNM*: the previous parameter subtracted by the genome-wide average 
 * *VSitesNuc*: proportion of sites in aligned nucleotide sequences which had some variation  
