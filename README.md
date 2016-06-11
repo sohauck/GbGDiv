@@ -37,6 +37,9 @@
 * *RatioCount*: ratio of unique nucleotide to unique amino acid sequences (increases with diversifying selective pressure)  
 * *RatioVS*: ratio of proportions of unique sites in nucleotide to amino acid sequences (increases with diversifying selective pressure)  
 
+## Visualisation with R Shiny
+https://apps-maidenlab.zoo.ox.ac.uk/GbGDiv/
+
 
 ## Possible additions:
 * measure of GC content  
