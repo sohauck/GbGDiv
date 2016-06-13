@@ -8,11 +8,11 @@ You're starting from a small text file that has 25 loci from the Mycobacterium W
 
 Starting from the GbGDiv folder:
 
-perl /Volumes/sofia/GbGDiv/GbGDiv.pl -table /Volumes/sofia/GbGDiv/Examples/25-MTB/25-MTB-table.txt -transpose YES -dboption 2 -dbname pubmlst_mycobacteria_seqdef
+perl GbGDiv.pl -table Examples/25-MTB/25-MTB-table.txt -transpose YES -dboption 2 -dbname pubmlst_mycobacteria_seqdef
 
 This breaks down into:
-"perl /Volumes/sofia/GbGDiv/GbGDiv.pl" -- use the Perl script
-"-table /Volumes/sofia/GbGDiv/Examples/25-MTB/25-MTB-table.txt" -- use the "25-MTB-table.txt" file as your table input
+"perl GbGDiv.pl" -- use the Perl script
+"-table Examples/25-MTB/25-MTB-table.txt" -- use the "25-MTB-table.txt" file as your table input
 "-transpose YES" -- since the table has loci as columns and we'd like to read it locus-by-locus through the rows, tranpose it first
 "-dboption 2 -dbname pubmlst_mycobacteria_seqdef" -- grab the full FASTA files from BIGSdb (option 2), from the database named "pubmlst_mycobacteria_seqdef"
 
@@ -53,3 +53,6 @@ Don't be worried if it doesn't find 'id', 'isolate' and 'species' as FASTA files
 4. What next?
 
 Pop the "ResultsTable.txt" file into the R Shiny website: https://apps-maidenlab.zoo.ox.ac.uk/GbGDiv/
+
+You could also try changing the FASTA option to 3, which would only grab the seen alleles, not the whole catalog.
+Or include "-locuscat 25-MTB-cat.txt
