@@ -16,6 +16,8 @@ shinyServer(function(input, output) {
     read.table(inFile$datapath, # open the file once it's in
                      header=TRUE, sep="\t", # tab-separated with a header
                      quote='"', skip = 5)
+    
+    
   })
   
   # subselecting the data frame depending on level of exclusion 
@@ -23,6 +25,16 @@ shinyServer(function(input, output) {
     df.all <- df.all()
     
     locount$total <- nrow(df.all)
+    
+    df.all$AllelicDiv <- c( df.all$CountNuc / df.all$AvgLength )
+    df.all$ADivNM <- c( (df.all$CountNuc - (mean(df.all$CountNuc / df.all$AvgLength) * df.all$AvgLength) ) / df.all$AvgLength )
+    
+    df.all$VSitesNuc <- (df.all$AvgLength     - df.all$NonVarNuc) /  df.all$AvgLength
+    df.all$VSitesAA <- ((df.all$AvgLength / 3) - df.all$NonVarAA) / (df.all$AvgLength / 3)
+    
+    df.all$RatioCount <- df.all$CountAA  /  df.all$CountNuc
+    df.all$RatioVS    <- df.all$VSitesAA /  df.all$VSitesNuc
+    
     
     if ( input$percexc == 0 )
     { return ( df.all ) }

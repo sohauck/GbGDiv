@@ -2,8 +2,8 @@ library(shiny)
 
 shinyUI(fluidPage(
   tags$head(includeScript("google-analytics.js")),
-  
-  titlePanel("GbGDiv Stats & Graphs + (Google Analytics!)"),
+
+  titlePanel("GbGDiv Stats & Graphs"),
 
   sidebarLayout(
 
@@ -11,15 +11,17 @@ shinyUI(fluidPage(
       
       h4("Upload your GbGDiv table"),
       
+      helpText( a("For examples and help, click here.",
+                  href="https://github.com/sohauck/GbGDiv",
+                  target = "_blank") ),
       fileInput('resultstable', 'Choose ResultsTable file',
                 accept=c('text/csv',
                          'text/comma-separated-values,text/plain',
                          '.csv')),
       
       sliderInput("percexc", "Max 'missing' allele tag percentage per locus:", 
-                  min = 0, max = 100, value = 5, step = .1),
+                  min = 0, max = 100, value = 20, step = .1),
 
-     # textOutput("exclusions"), 
       tagAppendAttributes(textOutput("exclusions"), style="white-space:pre-wrap;"),
       
       tags$hr(),
