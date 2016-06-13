@@ -1,5 +1,5 @@
-GbGDiv results table from '25MYCO-table-tY' records table.
-Created at 14:15, on Mon 13 Jun, 2016
+GbGDiv results table from '25-MTB-table' records table.
+Created at 14:24, on Mon 13 Jun, 2016
 Software version: 0.9
 Isolate records read from table: 11
 

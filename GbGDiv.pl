@@ -55,7 +55,7 @@ for ($i=0; $i<=$#ARGV; $i++)
 
 # Hello!
 print 	"\n=========================================================\n\n" . 
-		"Welcome to the 'Gene-by-Gene Diversity script!\n" .
+		"Welcome to the 'Gene-by-Gene Diversity' (aka GbGDiv) script!\n" .
 		"\n=========================================================\n\n" ;
 
 
@@ -596,7 +596,7 @@ rename ( $dOut."/ResultsTable-tmp.txt" , $dOut."/ResultsTable.txt" ) or die "Can
 
 
 
-print "Gene diversity scripts all complete!\n";
+print "\n\nGbGDiv all complete!\n";
 
 #---------------------------------------------------------------
 # Subroutines
