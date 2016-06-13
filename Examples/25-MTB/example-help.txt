@@ -55,4 +55,3 @@ Don't be worried if it doesn't find 'id', 'isolate' and 'species' as FASTA files
 Pop the "ResultsTable.txt" file into the R Shiny website: https://apps-maidenlab.zoo.ox.ac.uk/GbGDiv/
 
 You could also try changing the FASTA option to 3, which would only grab the seen alleles, not the whole catalog.
-Or include "-locuscat 25-MTB-cat.txt
