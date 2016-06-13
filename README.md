@@ -13,7 +13,6 @@
 * *-out*: Directory where all results will be saved.
 * *-dup*: Value for the minimum frequency for allele appearance to be included. Default is '1'.
 * *-mafft*: Can be used to add more parameters to MAFFT.  
-* *-locuscat*: A tab-separated file with locus names in the first column and categories on the second, used in making graphs.
 
 
 ## Parameters in the Results table:
@@ -37,6 +36,7 @@
 * *RatioCount*: ratio of unique nucleotide to unique amino acid sequences (increases with diversifying selective pressure)  
 * *RatioVS*: ratio of proportions of unique sites in nucleotide to amino acid sequences (increases with diversifying selective pressure)  
 
+
 ## Visualisation with R Shiny
 https://apps-maidenlab.zoo.ox.ac.uk/GbGDiv/
 
@@ -44,6 +44,7 @@ https://apps-maidenlab.zoo.ox.ac.uk/GbGDiv/
 ## Possible additions:
 * measure of GC content  
 * option of checking for variable sites by \*, :, or .  
+* including locus categories is temporarily removed, will be back soon!
 
 
 ## Known Issues
